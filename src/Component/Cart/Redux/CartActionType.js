@@ -1,0 +1,4 @@
+export const ADD_ITEMS = "ADD_ITEMS";
+export const REMOVE_ITEMS = "REMOVE_ITEMS";
+export const ADD_MULTI_ITEMS = "ADD_MULTI_ITEMS";
+export const REMOVE_MULTI_ITEMS = "REMOVE_MULTI_ITEMS";

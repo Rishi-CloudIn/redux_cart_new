@@ -1,0 +1,15 @@
+.nav-a {
+  font-size: large;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin: 0px 30px;
+}
+
+.nav-a:hover {
+  color: white;
+}
+.nav {
+  padding: 20px 0px;
+  margin-bottom: 30px !important;
+}
