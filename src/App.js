@@ -1,22 +1,24 @@
 import "./App.css";
 import React from "react";
-import Navbar from "./Component/Auth/AuthComponent/Navbar";
-import { Route, Routes } from "react-router-dom";
-import Profile from "./Component/Auth/AuthComponent/profile";
-import { AuthProvider } from "./Component/Auth/Auth";
-import Login from "./Component/Auth/AuthComponent/Login";
-import Home from "./Component/Auth/AuthComponent/Home";
-import About from "./Component/Auth/AuthComponent/About";
-import { RequireAuth } from "./Component/Auth/AuthComponent/RequireAuth";
-// import { Provider } from "react-redux";
-// import Cart from "./Component/Cart/cart";
-// import store from "./store";
+// import Navbar from "./Component/Auth/AuthComponent/Navbar";
+// import { Route, Routes } from "react-router-dom";
+// import Profile from "./Component/Auth/AuthComponent/profile";
+// import { AuthProvider } from "./Component/Auth/Auth";
+// import Login from "./Component/Auth/AuthComponent/Login";
+// import Home from "./Component/Auth/AuthComponent/Home";
+// import About from "./Component/Auth/AuthComponent/About";
+// import { RequireAuth } from "./Component/Auth/AuthComponent/RequireAuth";
+import { Provider } from "react-redux";
+import Cart from "./Component/Cart/cart";
+import store from "./store";
 
 function App() {
   return (
-    <AuthProvider>
+    // <AuthProvider>
+    <Provider store={store}>
       <div className="App">
-        <Navbar />
+        <Cart />
+        {/* <Navbar />
 
         <Routes>
           <Route path="/" element={<Home />} />
@@ -30,9 +32,10 @@ function App() {
             }
           />
           <Route path="login" element={<Login />} />
-        </Routes>
+        </Routes> */}
       </div>
-    </AuthProvider>
+    </Provider>
+    // </AuthProvider>
   );
 }
 
